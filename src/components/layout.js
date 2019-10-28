@@ -3,6 +3,8 @@ import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
 
+import Header from "./header"
+
 class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
@@ -60,7 +62,7 @@ class Layout extends React.Component {
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
-        <header>{header}</header>
+        <Header siteTitle={title} location={location} />
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with
