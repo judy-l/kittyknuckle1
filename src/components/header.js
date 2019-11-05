@@ -7,7 +7,7 @@ const Header = ({ siteTitle, location }) => (
     style={{
       // background: `rebeccapurple`,
       // background: `cornflowerblue`,
-			background: `black`,
+			background: `#f77fbe`,
       marginBottom: `1.45rem`,
     }}
   >
@@ -22,7 +22,7 @@ const Header = ({ siteTitle, location }) => (
         <Link
           to="/"
           style={{
-            color: `#f77fbe`,						// Persian pink.
+            color: `black`,						// Persian pink.
             textDecoration: `none`,
           }}
         >

@@ -56,11 +56,19 @@ class Layout extends React.Component {
     return (
       <div
         style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          margin: `0 auto`,
+      //    maxWidth: 960,
+          maxWidth: rhythm(36),
+          padding: `${rhythm(0.5)} ${rhythm(3 / 4)}`,
+
+      //    padding: `0px 1.0875rem 1.45rem`,
+          paddingTop: 0,
         }}
+
+      //    marginLeft: `auto`,
+      //    marginRight: `auto`,
+      //    maxWidth: rhythm(24),
+      //    padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
       >
         <Header siteTitle={title} location={location} />
         <main>{children}</main>
